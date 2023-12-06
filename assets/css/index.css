@@ -68,6 +68,11 @@ main {
     grid-template-rows: minmax(250px, auto);
   }
 }
+@media (min-width: 1200px) {
+  main {
+    padding: 4.5rem;
+  }
+}
 
 main section.card-one {
   position: relative;

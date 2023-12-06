@@ -47,5 +47,9 @@ main{
     padding: variables.$base-padding;
     @media (min-width: 730px){
         @include grid.grid;
+        
+    }
+    @media (min-width: 1200px){
+        padding: variables.$base-padding*3;
     }
 }
