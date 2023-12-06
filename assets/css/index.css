@@ -74,6 +74,10 @@ main {
   }
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
 main section.card-one {
   position: relative;
   z-index: 1;
@@ -84,15 +88,19 @@ main section.card-one {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-main section.card-one img.quotation {
+main section.card-one img.quotes-mark {
   position: absolute;
   top: -1%;
-  right: 10%;
-  width: 100%;
-  max-height: 50%;
-  min-height: 15%;
-  transform: skewX(-15deg);
+  right: 3%;
+  max-width: 30%;
+  height: 25%;
   z-index: 0;
+}
+main section.card-one .flex img {
+  position: relative;
+}
+main section.card-one .flex div {
+  position: relative;
 }
 main section.card-one .flex div h6 {
   padding: 0.125rem 0;

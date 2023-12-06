@@ -7,29 +7,30 @@
 
 
 main{
+    position: relative;
+        z-index: 1;
     
     section.card-one{
         position: relative;
         z-index: 1;
-        img.quotation{
+        img.quotes-mark{
             position: absolute;
             top: -1%;
-            right: 10%;
-            width: 100%;
-            max-height: 50%;
-            min-height: 15%;
-            transform: skewX(-15deg);
+            right: 3%;
+            max-width: 30%;
+            height: 25%;
             z-index: 0;
+
         }
         grid-column: 1/span 2;
         margin: variables.$base-margin 0;
         @include mixins.cards('mod-violet','light-gray-blue');
         .flex{
             @extend %flex;
-            img{
+            img{position: relative;
                 @extend %img-border;
             }
-            div{
+            div{position: relative;
                 h6{
                     @extend %verified;
                     padding: math.div(variables.$base-padding,12) 0;
