@@ -1,0 +1,29 @@
+@use 'variables';
+
+@mixin cards($bg-color,$color){
+    background-color: map-get(variables.$primary,$bg-color);
+    color: map-get(variables.$neutral,$color);
+    padding: variables.$base-padding;
+    border-radius: 0.5rem;
+}
+
+//placholder style for the image and name flex
+%flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%quotes{
+    opacity: 0.7;
+}
+
+%verified{
+    opacity: 0.5;
+}
+
+%img-border{
+    border: 3px solid map-get(variables.$primary, light-violet);
+    
+   
+}

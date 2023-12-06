@@ -1,0 +1,55 @@
+@use 'sass:math';
+@use '../components/reset';
+@use '../components/variables';
+@use '../components/mixins';
+@use '../components/grid';
+
+
+
+main{
+    
+    section.card-one{
+        position: relative;
+        z-index: 1;
+        img.quotation{
+            position: absolute;
+            top: -1%;
+            right: 10%;
+            width: 100%;
+            max-height: 50%;
+            min-height: 15%;
+            transform: skewX(-15deg);
+            z-index: 0;
+        }
+        grid-column: 1/span 2;
+        margin: variables.$base-margin 0;
+        @include mixins.cards('mod-violet','light-gray-blue');
+        .flex{
+            @extend %flex;
+            img{
+                @extend %img-border;
+            }
+            div{
+                h6{
+                    @extend %verified;
+                    padding: math.div(variables.$base-padding,12) 0;
+                }
+            }
+           
+        }
+        h1{
+            padding-top: math.div(variables.$base-padding,1.5);
+            position: relative;
+            z-index: 1;
+           
+        }
+
+        p{  @extend %quotes;
+            padding-top: math.div(variables.$base-padding,1.5);
+            line-height: 1.2rem;
+            
+        }
+    }
+ 
+
+}

@@ -1,0 +1,15 @@
+//importing the components
+@use 'components/reset';
+@use 'components/variables';
+@use 'components/mixins';
+@use 'components/grid';
+
+
+//importing sections
+@use 'sections/one';
+@use 'sections/two';
+@use 'sections/three';
+@use 'sections/four';
+@use 'sections/five';
+
+//font-family: 'Roboto', sans-serif;

@@ -1,0 +1,42 @@
+@use 'sass:math';
+@use '../components/reset';
+@use '../components/variables';
+@use '../components/mixins';
+@use '../components/grid';
+
+
+main{
+    section.card-five{
+        grid-column: 4;
+        grid-row: 1/span 2;
+        @media (min-width:730px) and (max-width:1199px){
+            grid-column: 1/span 4;
+            grid-row: 3;
+        }
+        margin: variables.$base-margin 0;
+        @include mixins.cards('whitee', 'light-grey');
+        color: map-get(variables.$primary, gray-blue);
+        
+        .flex{
+            @extend %flex;
+            div{
+                h6{
+                    @extend %verified;
+                    padding: math.div(variables.$base-padding,12) 0;
+                }
+            }
+            
+        }
+        h1{
+            padding-top: math.div(variables.$base-padding,1.5);
+        }
+
+        p{  @extend %quotes;
+            padding-top: math.div(variables.$base-padding,1.5);
+            line-height: 1.2rem;
+            
+        }
+    }
+ 
+
+}

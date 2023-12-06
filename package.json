@@ -1,0 +1,20 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "Frontendmentor Testimonial grid challenge",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "sass",
+    "css-grids",
+    "frontendmentor-",
+    "testimonal"
+  ],
+  "author": "Joy Ibe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

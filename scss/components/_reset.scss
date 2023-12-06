@@ -1,0 +1,51 @@
+@use 'sass:math';
+@use 'variables';
+@use 'grid';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: map-get(variables.$neutral, light-gray-blue);
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: map-get(variables.$fs, sm);
+}
+
+h4{
+    padding: 0;
+    margin: 0;
+    font-size: map-get(variables.$fs, xs);
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    font-size: variables.$base-fs;
+}
+
+h6{
+    padding: 0;
+    margin: 0;
+    font-size: variables.$base-fs;
+}
+
+img{
+    max-width: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right:math.div(variables.$base-margin,1.5) ;
+}
+
+main{
+    padding: variables.$base-padding;
+    @media (min-width: 730px){
+        @include grid.grid;
+    }
+}

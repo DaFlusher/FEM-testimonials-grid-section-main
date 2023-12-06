@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Roboto:wght@400;700&display=swap");
+main section.card-five .flex, main section.card-four .flex, main section.card-three .flex, main section.card-two .flex, main section.card-one .flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main section.card-five p, main section.card-four p, main section.card-three p, main section.card-two p, main section.card-one p {
+  opacity: 0.7;
+}
+
+main section.card-five .flex div h6, main section.card-four .flex div h6, main section.card-three .flex div h6, main section.card-two .flex div h6, main section.card-one .flex div h6 {
+  opacity: 0.5;
+}
+
+main section.card-four .flex img, main section.card-one .flex img {
+  border: 3px solid hsl(263, 50%, 56%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+h6 {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+img {
+  max-width: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+main {
+  padding: 1.5rem;
+}
+@media (min-width: 730px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    margin: 0.75rem;
+    grid-template-rows: minmax(250px, auto);
+  }
+}
+
+main section.card-one {
+  position: relative;
+  z-index: 1;
+  grid-column: 1/span 2;
+  margin: 1.5rem 0;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(210, 46%, 95%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+main section.card-one img.quotation {
+  position: absolute;
+  top: -1%;
+  right: 10%;
+  width: 100%;
+  max-height: 50%;
+  min-height: 15%;
+  transform: skewX(-15deg);
+  z-index: 0;
+}
+main section.card-one .flex div h6 {
+  padding: 0.125rem 0;
+}
+main section.card-one h1 {
+  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
+}
+main section.card-one p {
+  padding-top: 1rem;
+  line-height: 1.2rem;
+}
+
+main section.card-two {
+  grid-column: 3;
+  margin: 1.5rem 0;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(210, 46%, 95%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+@media (min-width: 730px) and (max-width: 1199px) {
+  main section.card-two {
+    grid-column: 3/span 2;
+  }
+}
+main section.card-two .flex div h6 {
+  padding: 0.125rem 0;
+}
+main section.card-two h1 {
+  padding-top: 1rem;
+}
+main section.card-two p {
+  padding-top: 1rem;
+  line-height: 1.2rem;
+}
+
+main section.card-three {
+  grid-column: 1;
+  margin: 1.5rem 0;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: hsl(217, 19%, 35%);
+}
+@media (min-width: 730px) and (max-width: 1199px) {
+  main section.card-three {
+    grid-column: 1/span 2;
+  }
+}
+main section.card-three .flex div h6 {
+  padding: 0.125rem 0;
+}
+main section.card-three h1 {
+  padding-top: 1rem;
+}
+main section.card-three p {
+  padding-top: 1rem;
+  line-height: 1.2rem;
+}
+
+main section.card-four {
+  grid-column: 2/span 2;
+  margin: 1.5rem 0;
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(210, 46%, 95%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+@media (min-width: 730px) and (max-width: 1199px) {
+  main section.card-four {
+    grid-column: 3/span 2;
+  }
+}
+main section.card-four .flex div h6 {
+  padding: 0.125rem 0;
+}
+main section.card-four h1 {
+  padding-top: 1rem;
+}
+main section.card-four p {
+  padding-top: 1rem;
+  line-height: 1.2rem;
+}
+
+main section.card-five {
+  grid-column: 4;
+  grid-row: 1/span 2;
+  margin: 1.5rem 0;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: hsl(217, 19%, 35%);
+}
+@media (min-width: 730px) and (max-width: 1199px) {
+  main section.card-five {
+    grid-column: 1/span 4;
+    grid-row: 3;
+  }
+}
+main section.card-five .flex div h6 {
+  padding: 0.125rem 0;
+}
+main section.card-five h1 {
+  padding-top: 1rem;
+}
+main section.card-five p {
+  padding-top: 1rem;
+  line-height: 1.2rem;
+}
+
+/*# sourceMappingURL=index.css.map */
